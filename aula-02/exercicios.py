@@ -128,7 +128,77 @@
 # #### try-except e if
 
 # 21: Conversor de Temperatura
+
+# try:
+#     celsius = float(input("digite o valor do grau Celsius: "))
+#     Fahrenheit = celsius * 1.8 + 32    
+# except ValueError as e:
+#     print(f"Digite um valor valido para a converão, mensagem de erro: {e}")    
+# else:
+#     print(f"Resultado: {Fahrenheit:.2f}F")
+
 # 22: Verificador de Palíndromo
+
+# texto = input("digite o texto para a verificação: ")
+# if isinstance(texto, str):
+#     texto = texto.replace(" ", "").lower()
+#     invertido = texto[::-1]
+#     if texto == invertido:
+#         print(f"O texto informado {texto} invertido {invertido} é um palíndromo")
+#     else:
+#         print(f"O texto informado {texto} invertido {invertido} não é um palíndromo")
+# else:    
+#     print("Digite um texto para a conversao")
+
 # 23: Calculadora Simples
+
+# try:
+#     valor1 = float(input("digite um valor: "))    
+#     operador = input("informe o operador(/, -, +, *): ").strip()
+#     valor2 = float(input("digite outro valor: "))
+#     if operador == "/":
+#         resultado = valor1 / valor2
+#     elif operador == "+":
+#         resultado = valor1 + valor2
+#     elif operador == "-":
+#         resultado = valor1 - valor2
+#     elif operador == "*":
+#         resultado = valor1 * valor2
+#     else:
+#         print(f"O operador mencionado {operador} não existe, digite um operador valido.")    
+#     print(f"Resultado: {resultado:.2f}")    
+# except ZeroDivisionError as e:
+#     print(f"Não se pode dividir um valor por 0, mensagem de erro: {e}") 
+# except ValueError as e:
+#     print(f"Digite um valor valido para o calculo, mensagem de erro: {e}")
+# except:
+#     pass
+    
 # 24: Classificador de Números
+
+# try:
+#     numero = int(input("Digite um número: "))
+#     if numero > 0:
+#         print("Positivo")
+#     elif numero < 0:
+#         print("Negativo")
+#     else:
+#         print("Zero")
+#     if numero % 2 == 0:
+#         print("Par")
+#     else:
+#         print("Ímpar")
+# except ValueError:
+#     print("Por favor, digite um número inteiro válido.")
+
 # 25: Conversão de Tipo com Validação
+
+# entrada_lista = input("Digite uma lista de números separados por vírgula: ")
+# numeros_str = entrada_lista.split(",")
+# numeros_int = []
+# try:
+#     for num in numeros_str:
+#         numeros_int.append(int(num.strip()))
+#     print("Lista de inteiros:", numeros_int)
+# except ValueError:
+#     print("Erro: certifique-se de que todos os elementos são números inteiros válidos.")
