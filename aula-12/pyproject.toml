@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "aula-12"
+version = "0.1.0"
+description = ""
+authors = ["André Mendes Nunes <branco.de@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+schedule = "^1.2.2"
+boto3 = "^1.34.159"
+pandas = "^2.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
